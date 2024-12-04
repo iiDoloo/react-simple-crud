@@ -5,7 +5,7 @@ const Info = () => {
     const {data} = useMyContext()
   return (
     <div className='bg-sky-500/100'>
-        Info : 
+        Informations :
         {data.isSubmitted && <p>Nom : {data.nom} Prénom : {data.prenom} Email : {data.email}
         </p>
         }
