@@ -6,11 +6,12 @@ import InfoForm from './components/FormProvider/InfoForm'
 
 function App() {
   const [data,setData]= useState([])
+  const [selectedField,setSelectedField] = useState({})
 
   return (
     <>
     <div className='bg-white dark:bg-slate-800'>
-    <MyContextProvider value={{data,setData}}>
+    <MyContextProvider value={{data,setData,selectedField,setSelectedField}}>
       <Info></Info>
       <InfoForm></InfoForm>
     </MyContextProvider>
